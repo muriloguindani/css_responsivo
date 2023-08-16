@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    padding: 16px 0;
+    background-color: rgb(16, 121, 182);
+    color: #fff;
+}
+
+header .container,
+.sobre .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li{
+    display: inline;
+    margin-left: 16px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+section img{
+    width: 500px;
+    margin-top: 60px;
+}
+
+.sobre{
+    margin-left: 30px;
+}
+
+section h2{
+    margin-bottom: 120px;
+    color: rgb(16, 121, 182);
+    border-bottom: 2px solid rgb(16, 121, 182);
+}
+.produtos img{
+    width: 200px;
+    height: 200px;
+    margin-right: 32px;
+}
+
+.tenis{
+    display:grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.tenis{
+    margin-bottom: 50px;
+    padding: 40px;
+}
+
+.produtos h2{
+    margin-top: 50px;
+}
+
+.produtos button{
+    margin-top: 10px;
+    padding: 16px;
+    color: #fff;
+    background-color: rgb(16, 121, 182) ;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px){
+    .tenis{
+        display: block;
+    }
+
+    .sobre .container{
+        display: block;
+        
+    }
+
+    .sobre img{
+        width: 320px;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .cotainer{
+        max-width: 90%;
+    }
+
+    .tenis{
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+
